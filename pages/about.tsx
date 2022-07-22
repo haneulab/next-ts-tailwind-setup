@@ -1,16 +1,16 @@
 import PrimaryLayout from '@components/core/layouts/primary/PrimaryLayout';
 import type { NextPageWithLayout } from './page';
 
-const Home: NextPageWithLayout = () => {
+const About: NextPageWithLayout = () => {
   return (
     <div className="p-8 h-[90vh] bg-slate-100 flex items-center justify-center">
-      <h3>Hello World!</h3>
+      <h3>About Page</h3>
     </div>
   );
 };
 
-export default Home;
+export default About;
 
-Home.getLayout = (_page) => {
+About.getLayout = (_page) => {
   return <PrimaryLayout>{_page}</PrimaryLayout>;
 };
